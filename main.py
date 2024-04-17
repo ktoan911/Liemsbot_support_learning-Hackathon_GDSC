@@ -1,3 +1,4 @@
+from argparse import ArgumentParser
 import requests
 import json
 import gradio as gr
@@ -10,6 +11,8 @@ headers = {
 
 conversation_history = []
 
+model = "liemsbot"
+
 
 def generate_response(prompt):
     conversation_history.append(prompt)
@@ -17,7 +20,7 @@ def generate_response(prompt):
     full_prompt = "\n".join(conversation_history)
 
     data = {
-        "model": "liemsbot1",  # 20
+        "model": model,  # 20
         "stream": False,
         "prompt": full_prompt,
     }
@@ -34,6 +37,12 @@ def generate_response(prompt):
         print("Error:", response.status_code, response.text)
         return None
 
+
+parser = ArgumentParser()
+# Định nghĩa model muốn sử dụng
+parser.add_argument("--model", default="liemsbot1", type=str)
+args = parser.parse_args()
+model = args.model
 
 # Định nghĩa giao diện Gradio với các tùy chọn tùy chỉnh
 iface = gr.Interface(
