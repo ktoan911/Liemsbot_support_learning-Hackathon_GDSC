@@ -4,8 +4,7 @@ Authors:
 - Email: khanhtoan.forwork@gmail.com 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=xKN8LjJHfx0" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=xKN8LjJHfx0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 This project, Liemsbot - Chatbot supporting learning, is built based on the prompt-based fine-tuning approach using the large language model Llama2. The chatbot is capable of answering questions related to general subjects at the university level, assisting students in obtaining quick and accurate explanations for their inquiries.
 
@@ -32,5 +31,5 @@ ollama create {name of chatbot} -f ./model.txt
 python main.py --model {name of chatbot}
 ``` 
 
-![Image](.\assets\image.png)
+![Image](assets\image.png)
 
