@@ -40,7 +40,7 @@ def generate_response(prompt):
 
 parser = ArgumentParser()
 # Định nghĩa model muốn sử dụng
-parser.add_argument("--model", default="liemsbot1", type=str)
+parser.add_argument("--model", required=True, type=str)
 args = parser.parse_args()
 model = args.model
 
