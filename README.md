@@ -25,11 +25,17 @@ cd {repository_directory_name}
 ```
 ollama create {name of chatbot} -f ./model.txt
 ``` 
-- Step 4: Using Gradio to create a chatbot interface.
+- Step 4: Install requirement.txt
+
+```
+pip install -r requirements.txt
+``` 
+- Step 5: Using Gradio to create a chatbot interface.
 
 ```
 python main.py --model {name of chatbot}
 ``` 
+Result :
 
 ![Image](assets\image.png)
 
