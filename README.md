@@ -4,7 +4,7 @@ Authors:
 - Email: khanhtoan.forwork@gmail.com 
 
 
-![](assets\DemoVideo.gif)
+![](https://github.com/ktoan911/Liemsbot_support_learning-Hackathon_GDSC/blob/main/assets/DemoVideo.gif)
 
 This project, Liemsbot - Chatbot supporting learning, is built based on the prompt-based fine-tuning approach using the large language model Llama2. The chatbot is capable of answering questions related to general subjects at the university level, assisting students in obtaining quick and accurate explanations for their inquiries.
 
@@ -37,5 +37,5 @@ python main.py --model {name of chatbot}
 ``` 
 Result :
 
-![Image](assets\image.png)
+![Image](https://github.com/ktoan911/Liemsbot_support_learning-Hackathon_GDSC/blob/main/assets/image.png)
 
